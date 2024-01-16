@@ -80,6 +80,7 @@ main{
     font-weight: 500;
     line-height: 20px; 
     margin: 20px 76px 20px 0;
+    cursor: pointer;
 }
 
 
@@ -94,6 +95,15 @@ main{
 .goback-arrow{
     width: 44px;
     height: 44px;
+    cursor: pointer;
+}
+
+.goback-arrow:hover{
+    filter: invert(99%) sepia(96%) saturate(337%) hue-rotate(181deg) brightness(92%) contrast(90%);
+}
+
+.goback-arrow:active{
+    filter: invert(94%) sepia(4%) saturate(276%) hue-rotate(206deg) brightness(91%) contrast(85%);
 }
 
 .blog-container{
@@ -261,5 +271,6 @@ main{
 .blog-open img{
     width: 20px;
     height: 20px;
+    cursor: pointer;
 }
 
