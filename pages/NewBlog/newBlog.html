@@ -22,18 +22,18 @@
 
       <section class="main-container">
 
-        <img src="./image/back-Arrow.svg" alt="back-Arrow">
+        <img class="goback-arrow" src="./image/back-Arrow.svg" alt="back-Arrow">
 
-        <div class="new-blog container">
+        <div class="newblog-container">
 
           <h1>ბლოგის დამატება</h1>
-          <div>
+          <div class="newblog-info">
             <div class="upload-photo">
               <h3>ატვირთეთ ფოტო</h3>
               <form action="/upload" method="post" enctype="multipart/form-data">
-                <img src="./image/folder-add.svg" alt="folder-icon">
-                <label for="file">ჩააგდეთ ფაილი აქ ან </label>
-               <a href="#">აირჩიეთ ფაილი</a> 
+                <img class="folder-icon" src="./image/folder-add.svg" alt="folder-icon">
+                <label for="file">ჩააგდეთ ფაილი აქ ან <span>აირჩიეთ ფაილი<span> </label>
+               
               </form>
             </div>
 
@@ -41,12 +41,13 @@
               <div class="author-container">
                 <h3>ავტორი *</h3>
                 <input type="text" placeholder="შეიყვნეთ ავტორი">
-                <br>
-                <span>მინიმუმ 4 სიმბოლო</span>
-                <br>
-                <span>მინიმუმ ორი სიტყვა</span> 
-                <br>
-                <span> მხოლოდ ქართული სიმბოლოები</span>
+            <div class="validation">
+                <li>მინიმუმ 4 სიმბოლო</li>
+                <li>მინიმუმ ორი სიტყვა</li>
+                <li>მხოლოდ ქართული სიმბოლოები</li>
+              
+            </div>
+                
               </div>
 
               <div class="title-container">
@@ -56,7 +57,7 @@
               </div>
             </div>
 
-            <div class="description -container">
+            <div class="description-container">
               <h3>აღწერა *</h3>
               <input type="text" placeholder="შეიყვნეთ აღწერა">
               <span>მინიმუმ 2 სიმბოლო</span>
@@ -65,15 +66,23 @@
             <div class="releasedate-category-container">
               <div class="release-date-container">
                 <h3>გამოქვეყნების თარიღი *</h3>
-                <input  type="date"  >
+                <div class="release">
+                  <img src="./image/calendar.svg" alt="calendar">
+                  <input type="text" placeholder="12/12/2023">
+                </div>
+                
               </div>
-              <div class="category">
+              <div class="category-container">
                 <h3>კატეგორია *</h3>
-                <input type="text"name="" id="">
+                <div class="category">
+                  <input type="text" placeholder="აირჩიეთ კატეგორია">
+                  <img src="./image/arrow-down.svg" alt="arrow-down">
+                </div>
+                
               </div>
             </div>
 
-            <div class="email-conatiner">
+            <div class="email-container">
                   <h3>ელ-ფოსტა</h3>
                   <input type="email" name="" id="" placeholder="Example@redberry.ge">
             </div>
