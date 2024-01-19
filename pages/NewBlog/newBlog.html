@@ -5,9 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../common.css" />
     <link rel="stylesheet" href="newBlog.css" />
-    <title>Document</title>
+    <title>Add Blog</title>
+
+
+
   </head>
   <body>
+
+    <main>
+
+      <section class="header"> 
+
+        <img src="./image/logo.png" alt="logo">
+
+      </section>
+
+      <section class="main-container">
+
+        <img src="./image/back-Arrow.svg" alt="back-Arrow">
+
+        <div class="new-blog container">
+
+          <h1>ბლოგის დამატება</h1>
+          <div>
+            <div class="upload-photo">
+              <h3>ატვირთეთ ფოტო</h3>
+              <form action="/upload" method="post" enctype="multipart/form-data">
+                <img src="./image/folder-add.svg" alt="folder-icon">
+                <label for="file">ჩააგდეთ ფაილი აქ ან </label>
+               <a href="#">აირჩიეთ ფაილი</a> 
+              </form>
+            </div>
+
+            <div class="author-title-container">
+              <div class="author-container">
+                <h3>ავტორი *</h3>
+                <input type="text" placeholder="შეიყვნეთ ავტორი">
+                <br>
+                <span>მინიმუმ 4 სიმბოლო</span>
+                <br>
+                <span>მინიმუმ ორი სიტყვა</span> 
+                <br>
+                <span> მხოლოდ ქართული სიმბოლოები</span>
+              </div>
+
+              <div class="title-container">
+                <h3>სათური *</h3>
+                <input type="text" placeholder="შეიყვნეთ სათაური">
+                <span>მინიმუმ 2 სიმბოლო</span>
+              </div>
+            </div>
+
+            <div class="description -container">
+              <h3>აღწერა *</h3>
+              <input type="text" placeholder="შეიყვნეთ აღწერა">
+              <span>მინიმუმ 2 სიმბოლო</span>
+            </div>
+
+            <div class="releasedate-category-container">
+              <div class="release-date-container">
+                <h3>გამოქვეყნების თარიღი *</h3>
+                <input  type="date"  >
+              </div>
+              <div class="category">
+                <h3>კატეგორია *</h3>
+                <input type="text"name="" id="">
+              </div>
+            </div>
+
+            <div class="email-conatiner">
+                  <h3>ელ-ფოსტა</h3>
+                  <input type="email" name="" id="" placeholder="Example@redberry.ge">
+            </div>
+          </div>
+          
+          <button class="upload">გამოქვეყნება</button>
+
+        </div>
+
+
+
+      </section>
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="./newBlog.js"></script>
   </body>
 </html>
