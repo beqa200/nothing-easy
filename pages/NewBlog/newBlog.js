@@ -1,3 +1,24 @@
+
+const authorElements = document.getElementsByClassName('author');
+
+
+function checkAuthor(event) {
+   
+    event.preventDefault();
+
+    const input = event.target.value;
+
+    const inputArr = input.split(" ");
+    console.log(inputArr);
+
+}
+
+
+
+
+
+
+
 const form = document.getElementsByClassName("email-form")[0]; 
 
 const msg = "მეილი უნდა მთავრდებოდეს @redberry.ge-ით";

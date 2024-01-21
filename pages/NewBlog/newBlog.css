@@ -233,6 +233,30 @@ h3{
     padding: 12px 0 12px 16px;
 }
 
+form.error input[type="email"]{
+    border: 1px solid #EA1919;
+    background: #FAF2F3;
+}
+
+#error_container{
+    width: 288px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    
+}
+#error_container img{
+    align-self: self-start;
+}
+
+
+#error_container p{
+    color: #EA1919;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+}
 
 .upload{
 width: 288px;
